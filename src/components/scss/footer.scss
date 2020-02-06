@@ -1,0 +1,15 @@
+.footer {
+    // position: absolute;
+    // top: calc(100% - 99px);
+    // bottom: 0;
+    width: 100%;
+    margin-top: 175px;
+
+    &__content {
+        height: 90px;
+        padding-top: 10px;
+        background-color: #181818;
+        text-align: center;
+        color: white;
+    }
+}

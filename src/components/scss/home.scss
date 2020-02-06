@@ -1,0 +1,109 @@
+.home {
+    display: flex;
+    max-width: 1386px;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+
+
+    &__aanbiedingen {
+        font-size: 18px;
+        justify-content: space-between;
+    }
+
+    &__item {
+        flex-direction: row;
+        float: left;
+        list-style-type: none;
+        margin: 0 25px 0 0;
+        width: 400px;
+        height: 400px;
+        transition: 0.3s;
+        padding: 0;
+        border: 1px solid rgb(0, 0, 0);
+        margin: 30px 30px;
+
+        &:hover {
+            background-color: #fdfdfd;
+            transform: Scale(1.1) rotate(-2deg);
+            box-shadow: 5px 5px 10px black;
+            z-index: 999;
+        }
+    }
+}
+
+.panel {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+
+    &__login {
+        background-color: #ffffff;
+        display: flex;
+        margin: 5% auto 15% auto;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #888;
+        width: 550px;
+        height: 350px;
+        border: 3px solid black;
+        border-radius: 3px;
+    }
+
+    &--active {
+        display: flex;
+    }
+
+    &__input {
+        border: 2px solid black;
+        background-color: #ffffff;
+        width: 400px;
+        height: 40px;
+        margin:0 0 10px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 18px;
+
+        &:focus {
+            box-shadow: 1px 1px 5px black;
+        }
+
+    }
+
+    &__submit {
+        width: 414px;
+        height: 46px;
+        background-color: #ff0000c4;
+        border: 2px solid black;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    &__close {
+        position: relative;
+        bottom: 220px;
+        left: 250px;
+        width: 35px;
+        height: 35px;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover, :focus {
+            opacity: 0.8;
+            color: #ff0000c4;
+        }
+    }
+}

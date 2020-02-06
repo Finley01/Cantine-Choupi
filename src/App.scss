@@ -1,0 +1,79 @@
+@import 'components/scss/home.scss';
+@import 'components/scss/footer.scss';
+@import 'components/scss/menu.scss';
+@import 'components/scss/checkout.scss';
+@import 'components/scss/Admin.scss';
+
+html {
+    font-family: 'Open Sans', sans-serif;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #18181856;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgb(201, 201, 201);
+      }
+
+      background-color: #181818;
+}
+body {
+    height: 100%;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818;
+    height: 130px;
+
+    &__logo {
+        width: 150px;
+        margin: 10px 0 0 10px;
+    }
+
+    &__link {
+        text-decoration: none;
+        width: 100px;
+        height: 100px;
+        color: rgb(255, 255, 255);
+        transition: 0.3s;
+
+        &:hover, :focus, :active {
+            color: rgba(255, 255, 255, 0.61);
+        }
+    }
+
+    &__item {
+        list-style-type: none;
+        font-size: 30px;
+        width: 100px;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+
+    &__title {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 30px;
+
+    }
+    &__subtitle {
+        font-size: 21px;
+    }
+}

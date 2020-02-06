@@ -1,0 +1,110 @@
+.form {
+display: flex;
+justify-content: center;
+
+    &__container {
+        flex-wrap: wrap;
+        width: 420px;
+    }
+
+    &__input {
+        border: 2px solid black;
+        background-color: #fcfcfc;
+        width: 400px;
+        height: 40px;
+        margin:0 0 10px 20px;
+        border-radius: 3px;
+        padding-left: 10px;
+        font-size: 18px;
+
+        &:focus {
+            box-shadow: 1px 1px 5px black;
+        }
+    }
+
+    &__submit {
+        width: 414px;
+        height: 46px;
+        background-color: #ff0000c4;
+        border: 2px solid black;
+        color: white;
+        margin-left: 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+}
+
+.order {
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+    width: 420px;
+    max-height: 438px;
+    border-radius: 3px;
+
+    &__items {
+        height: 330px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+          }
+
+        &::-webkit-scrollbar-thumb {
+            background: #18181856;
+
+            &:hover {
+                background: #181818e8;
+            }
+        }
+    }
+
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 3px;
+    }
+
+    &__header {
+        text-align: center;
+        font-size: 22px;
+        border-bottom: 2px solid black;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    &__total {
+        text-align: center;
+        overflow-y: visible;
+        margin: 0;
+        bottom: 0;
+        padding-top: 10px;
+        border-top: 2px solid black;
+    }
+
+    &__item {
+        padding-left: 25px;
+        flex: 3;
+        max-width: 310px;
+    }
+
+    &__button {
+        height: 30px;
+        width: 30px;
+        margin:0 10px 0 0;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
